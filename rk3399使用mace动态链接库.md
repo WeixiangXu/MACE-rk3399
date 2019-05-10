@@ -46,4 +46,4 @@ mace_net.cpp的说明：
 - 可以参考main函数里给的step1234
 - 模型类型参考model_type.hpp
 - mymace.LoadModel("alexnet.pb","alexnet.data")这里的模型和参数文件是从caffe转换好的
-- 我测的gpu时间：337s  cpu时间：408ms（测50次取平均）
+- 我测的gpu时间：337ms  cpu时间：408ms（测50次取平均）
