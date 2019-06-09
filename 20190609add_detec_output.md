@@ -1,4 +1,5 @@
 ## 输出格式
+- 定义在base_net.hpp中
 ```
 struct BBox {
   float xmin;
@@ -20,3 +21,4 @@ struct BBox {
 - rk3399
 - CPU 223ms
 - GPU 883ms(detection output这一层的操作mace官方并没有gpu的优化版本)
+- 如何更改CPU、GPU模式，见之前的文档
