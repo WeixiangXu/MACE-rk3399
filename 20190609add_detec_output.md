@@ -20,5 +20,13 @@ struct BBox {
 ## 时间测试
 - rk3399，mobilenetv1_ssd
 - CPU 223ms
-- GPU 883ms(detection output这一层的操作mace官方并没有gpu的优化版本)
+- GPU 450ms 
 - 如何更改CPU、GPU模式，见之前的文档
+
+- 注意：gpu测试一次耗时约为1000+ms，但一次性测50次取平均约为450ms。（初始化原因导致第一次测试耗时较长）
+
+## how to run
+- 准备一张图"pic1.jpg"在build下
+- ssd_mobilenet_v1.data和ssd_mobilenet_v1.pb已经转换好在build下
+- cmake，make
+- ./mace_on_boards
