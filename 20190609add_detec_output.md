@@ -18,7 +18,7 @@ struct BBox {
 - src/mace_net.cpp
 
 ## 时间测试
-- rk3399
+- rk3399，mobilenetv1_ssd
 - CPU 223ms
 - GPU 883ms(detection output这一层的操作mace官方并没有gpu的优化版本)
 - 如何更改CPU、GPU模式，见之前的文档
